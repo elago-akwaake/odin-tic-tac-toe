@@ -1,0 +1,48 @@
+.largeText {
+    font-size: 5rem;
+}
+
+#gameboardDisplay {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.hide-button {
+    display: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 5;
+}
+
+.modal-body {
+    display: relative;
+    padding: 2em;
+    margin: 0 auto;
+    width: 70%;    
+    background: white;
+    z-index: 10;
+}
+
+.modal-close-button {
+    float: right;
+    cursor: pointer;
+}
+
+.modal.active {
+    display: block;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<div id="content">
+			<h1>Tic Tac Toe Game</h1>
+			<button id="startButton" class="">Start Game</button>
+			<div id="gameboardDisplay">
+				<div class="cell" data-cell-id="0">T</div>
+				<div class="cell" data-cell-id="1">I</div>
+				<div class="cell" data-cell-id="2">C</div>
+				<div class="cell" data-cell-id="3">T</div>
+				<div class="cell" data-cell-id="4">A</div>
+				<div class="cell" data-cell-id="5">C</div>
+				<div class="cell" data-cell-id="6">T</div>
+				<div class="cell" data-cell-id="7">O</div>
+				<div class="cell" data-cell-id="8">E</div>
+			</div>
+			<div id="modal" class="modal">
+				<div class="modal-body">
+					<div class="modal-close-button" id="closeButton">&times;</div>
+					<div class="modal-meessage" id="modalMessage">Tempo Message</div>
+					<button id="restartButton" class="hide-button">Restart Game</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
