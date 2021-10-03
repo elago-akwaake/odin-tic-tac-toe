@@ -2,3 +2,4 @@ node_modules
 snippets.js
 webpack
 other_files
+deploy.sh
