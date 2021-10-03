@@ -7,17 +7,26 @@
 		<title>My Application</title>
 	<script defer src="index.bundle.js"></script></head>
 	<body>
-		<h1>Tic Tac Toe Game</h1>
 		<div id="content">
-			<button id="startButton">Start Game</button>
-			<button id="restartButton">Restart Game</button>
-			<div id="gameboard">
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
-				<div class="cell"></div>
+			<h1>Tic Tac Toe Game</h1>
+			<button id="startButton" class="">Start Game</button>
+			<div id="gameboardDisplay">
+				<div class="cell" data-cell-id="0">T</div>
+				<div class="cell" data-cell-id="1">I</div>
+				<div class="cell" data-cell-id="2">C</div>
+				<div class="cell" data-cell-id="3">T</div>
+				<div class="cell" data-cell-id="4">A</div>
+				<div class="cell" data-cell-id="5">C</div>
+				<div class="cell" data-cell-id="6">T</div>
+				<div class="cell" data-cell-id="7">O</div>
+				<div class="cell" data-cell-id="8">E</div>
+			</div>
+			<div id="modal" class="modal">
+				<div class="modal-body">
+					<div class="modal-close-button" id="closeButton">&times;</div>
+					<div class="modal-meessage" id="modalMessage">Tempo Message</div>
+					<button id="restartButton" class="hide-button">Restart Game</button>
+				</div>
 			</div>
 		</div>
 	</body>
